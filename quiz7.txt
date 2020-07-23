@@ -9,3 +9,7 @@ Drop all columns except for these... ['Loan Grade', 'Term (months)', 'Interest R
 Question 2
 Now that you know the difference, drop the Interest Rate column as well and rename the column Term (months) to Term. Also check if all attributes are in the correct format (integers, float etc). If not, change them into the right format.
 
+Question 3
+Describe in a few words what type of variables are Loan Grade, Term, Days Late and Delinquency Status and why.
+
+
