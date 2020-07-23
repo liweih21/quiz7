@@ -4,36 +4,36 @@ df = pd.read_csv('upstart-loan-data.csv')
 
 Question 1
 Drop all columns except for these... ['Loan Grade', 'Term (months)', 'Interest Rate', 'APR', 'Origination Fee', 'Loan Size', 'Outstanding Principal', 'Days Late', 'Delinquency Status']
-
+in[]: df.drop(['Unnamed: 0', 'Loan ID', 'Origination Date', 'Charged Off Amount', 'Charged Off Date'], axis = 1, inplace = True)
 
 Question 2
 Now that you know the difference, drop the Interest Rate column as well and rename the column Term (months) to Term. Also check if all attributes are in the correct format (integers, float etc). If not, change them into the right format.
-
+in[]: df.drop(['Interest Rate'], axis = 1, inplace = True)
 
 Question 3
 Describe in a few words what type of variables are Loan Grade, Term, Days Late and Delinquency Status and why.
-
+in[]: 
 
 Question 4
 Compute the average by Loan Grade for all columns and give a few remarks on what you observe for the APR and Days Late columns.
-
+in[]: 
 
 Question 5
 Verify if there are any missing values in the dataset. Confirm that by applying the size() aggregation method on any of the columns.
-
+in[]: 
 
 Question 6
 Display the count by Loan Grade of all the customers in the dataset. Also display the max, min and mean by Loan Grade of Outstanding Principal. Which loan grade has the least number of customers? Which loan grade has the lowest spread? Does the rating of the lowest spread customers conform to what you would expect if you were the lender?
-
+in[]: 
 
 Question 7
 Does Loan Size provide any information about Loan Grade? Is a high risk borrower more likely to take bigger loans than a low risk borrower based on the data you have? Define in a few words what risk is to a lender? And to a borrower?
-
+in[]: 
 
 Question 8
 Display the count by Loan Grade of all the customers in the dataset and call that column Count. Also display the max, min and mean by Loan Grade of Outstanding Principal and call them Max Balance, Min Balance and Average Balance.
-
+in[]: 
 
 Question 9
 Write a code that takes the Term column and replace the values within that to 0 for 36 months and 1 for 60 months using a loop. Do the same using a lambda function. And then, using the get_dummies method (you might have to write additional code to drop redundant columns).
-
+in[]: 
