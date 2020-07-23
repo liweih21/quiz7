@@ -33,20 +33,21 @@ in[]: df.groupby(by = 'Term').size().sum()
 
 Question 6
 Display the count by Loan Grade of all the customers in the dataset. Also display the max, min and mean by Loan Grade of Outstanding Principal. Which loan grade has the least number of customers? Which loan grade has the lowest spread? Does the rating of the lowest spread customers conform to what you would expect if you were the lender?
-in[]: 
+in[]: df.groupby(by = 'Loan Grade')['Outstanding Principal'].agg(['size', 'max', 'min', 'mean'])
 
 
 Question 7
 Does Loan Size provide any information about Loan Grade? Is a high risk borrower more likely to take bigger loans than a low risk borrower based on the data you have? Define in a few words what risk is to a lender? And to a borrower?
-in[]: 
+in[]: df.groupby(by = 'Loan Grade')['Loan Size'].agg(['size', 'max', 'min', 'mean'])
 
 
 Question 8
 Display the count by Loan Grade of all the customers in the dataset and call that column Count. Also display the max, min and mean by Loan Grade of Outstanding Principal and call them Max Balance, Min Balance and Average Balance.
-
-
 in[]: 
+
 
 Question 9
 Write a code that takes the Term column and replace the values within that to 0 for 36 months and 1 for 60 months using a loop. Do the same using a lambda function. And then, using the get_dummies method (you might have to write additional code to drop redundant columns).
 in[]: 
+
+
