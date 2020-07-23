@@ -39,7 +39,7 @@ in[]: df.groupby(by = 'Loan Grade')['Outstanding Principal'].agg(['size', 'max',
 
 Question 7
 Does Loan Size provide any information about Loan Grade? Is a high risk borrower more likely to take bigger loans than a low risk borrower based on the data you have? Define in a few words what risk is to a lender? And to a borrower?
-yes, 
+yes, lower the borrower level less # of approvals from lenders, so that means less lenders willing to lend out higher amounts to them.
 
 
 Question 8
