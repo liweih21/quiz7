@@ -24,11 +24,11 @@ Delinquency Status        object
 
 Question 4
 Compute the average by Loan Grade for all columns and give a few remarks on what you observe for the APR and Days Late columns.
-
+in[]: df.groupby(by = 'Loan Grade').mean()
 
 Question 5
 Verify if there are any missing values in the dataset. Confirm that by applying the size() aggregation method on any of the columns.
-in[]: 
+in[]: df.groupby(by = 'Term').size().sum()
 
 
 Question 6
